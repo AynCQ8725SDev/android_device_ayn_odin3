@@ -8,5 +8,9 @@ DEVICE_PATH := device/ayn/odin3
 # Include the common OEM chipset BoardConfig.
 include device/ayn/cq8725s-common/BoardConfigCommon.mk
 
+# Properties
+DEVICE_PROPERTIES_PATH := $(DEVICE_PATH)/properties
+TARGET_VENDOR_PROP += $(DEVICE_PROPERTIES_PATH)/vendor.prop
+
 # Include the proprietary files BoardConfig.
 include vendor/ayn/odin3/BoardConfigVendor.mk
