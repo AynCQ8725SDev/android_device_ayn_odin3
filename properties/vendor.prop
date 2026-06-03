@@ -4,3 +4,7 @@ bluetooth.device.default_name=Odin3
 # Display
 debug.sf.ignore_hwc_physical_display_orientation=true
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1525|0|250|local:4630946441858561683

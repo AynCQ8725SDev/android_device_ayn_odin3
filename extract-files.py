@@ -23,6 +23,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('"ver": "0"', '"ver": "1"')
         .regex_replace('"data": "\\+y"', '"data": "-x"')
         .regex_replace('"data": "\\+x"', '"data": "+y"'),
+    'vendor/lib64/hw/fingerprint.qcom.so': blob_fixup()
+        .binary_regex_replace(b'fingerprint.focaltech', b'fingerprint\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

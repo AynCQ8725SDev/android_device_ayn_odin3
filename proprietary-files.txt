@@ -79,5 +79,9 @@ vendor/firmware/mcuapp_firmware.bin
 # Display calibration data - from Thor.20260112.215904
 vendor/etc/display/qdcm_calib_data_icna3520_amoled_panel_with_DSC.json|6cd815b067ec41a401ff42a36d9933435a3d0005
 
+# Fingerprint
+vendor/bin/ff_ta.elf
+vendor/lib64/hw/fingerprint.focaltech.default.so:vendor/lib64/hw/fingerprint.qcom.so;FIX_SONAME
+
 # Sensors
 vendor/etc/sensors/config/pakala_qmi8658_0.json
